@@ -108,6 +108,7 @@ public class Scrabble {
 				if (isWordInDictionary(input)){
 					score += wordScore(input);
 					System.out.println(input + " earned " + wordScore(input) + " points. " + "Score: " + score + " points");
+					System.out.println();
 					hand = MyString.remove(hand, input);
 				} else {
 				    System.out.println("Invalid word. Try again.");
@@ -121,6 +122,7 @@ public class Scrabble {
 	        System.out.println("Ran out of letters. Total score: " + score + " points");
 		} else {
 			System.out.println("End of hand. Total score: " + score + " points");
+			System.out.println();
 		}
 	}
 
