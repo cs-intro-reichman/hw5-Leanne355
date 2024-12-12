@@ -66,7 +66,7 @@ public class Scrabble {
 		String alphabet = "abcdefghijklmnopqrstuvwxyz";
 		int score = 0;
 		for ( int  i = 0; i < word.length(); i++){
-			score = score + (int) SCRABBLE_LETTER_VALUES[alphabet.indexOf(word.charAt(i))];
+			score = score + ((int) SCRABBLE_LETTER_VALUES[alphabet.indexOf(word.charAt(i))]*word.length());
 		}
 		if (word.length() == 10){
 			score = score + 50;
