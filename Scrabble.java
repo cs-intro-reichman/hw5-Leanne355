@@ -114,17 +114,21 @@ public class Scrabble {
 					}
 					else {
 						System.out.println("Invalid word. Try again.");
+						System.out.println("");
+
 					}
 					
 				} else {
 					if (MyString.subsetOf(input, hand)){
 						System.out.println("No such word in the dictionary. Try again.");
+						System.out.println("");
 					}
 					else{
 						System.out.println("Invalid word. Try again.");
+						System.out.println("");
+
 
 					}					
-					System.out.println("");
 				}
 			}
 			else {
